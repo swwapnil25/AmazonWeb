@@ -31,6 +31,10 @@ border: none;
 width: 4%;
 height: 74%;
 }
+
+.main{
+	overflow: hidden;
+}
 .nav{
 display: flex;
 justify-content: space-around;
@@ -66,6 +70,7 @@ border-bottom: 2px solid whitesmoke;
 .main img{
 width: 162%;
 margin-left: -324px;
+overflow: hidden;
 }
 .container{
 display: flex;
