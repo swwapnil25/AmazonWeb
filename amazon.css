@@ -2,19 +2,50 @@
 margin: 0%;
 padding: 0%;
 font-family: 'Mulish', sans-serif;
+/* color: var(--fifth-color); */
+}
+:root{
+
+/* Dark-Mode */
+
+/*  --primary-color:#171719;
+--secondary-color: #0b0b0c;
+--third-color: #151414;
+--fourth-color: #1d1e20;
+--fifth-color: whitesmoke;
+--sixth-color: #080808;   */
+
+/* Light-Mode */
+
+--primary-color:#0d0d28;
+--secondary-color: #272745;
+--third-color: #e0d7d7;
+--fourth-color: #edf2fc;
+--fifth-color: black;
+--sixth-color: rgb(19, 19, 49);
+
+}
+.dark-theme{
+--primary-color:#171719;
+--secondary-color: #0b0b0c;
+--third-color: #151414;
+--fourth-color: #1d1e20;
+--fifth-color: whitesmoke;
+--sixth-color: #080808;
 }
 body{
-background-color: rgb(224, 215, 215);
+background-color: var(--third-color);
 }
 .font h1{
 margin-top: 14px;
 font-size: 23px;
+color: var(--fifth-color);
 }
 .fnav{
 display: flex;
 justify-content: center;
 justify-content: space-around;
-background-color: rgb(13, 13, 40);
+background-color: var(--primary-color);
 color: white;
 padding: 11px;
 }
@@ -31,9 +62,8 @@ border: none;
 width: 4%;
 height: 74%;
 }
-
 .main{
-	overflow: hidden;
+overflow: hidden;
 }
 .nav{
 display: flex;
@@ -57,7 +87,7 @@ display: flex;
 justify-content: center;
 justify-content: space-around;
 padding: 8px;
-background-color: rgb(39, 39, 69);  /* graycolor for nav */
+background-color: var(--secondary-color);  /* graycolor for nav */
 color: white;
 /* 	margin-top: 2px; */
 }
@@ -66,6 +96,9 @@ margin-top: 2px;
 }
 .snav p:hover{
 border-bottom: 2px solid whitesmoke;
+border-top: 2px solid whitesmoke;
+border-right: 2px solid whitesmoke;
+border-left: 2px solid whitesmoke;
 }
 .main img{
 width: 162%;
@@ -88,14 +121,14 @@ margin-top: -400px;
 .card{
 width: 380px;
 height: 440px;
-background-color: #fff; /* white*/
+background-color: var(--fourth-color); /* white*/
 text-align: center;
 padding: 11px;
 }
 .card2{
 width: 382px;
 height: 365px;
-background-color: #fff; /* white*/
+background-color: var(--fourth-color); /* white*/
 text-align: center;
 padding: 11px;
 }
@@ -109,13 +142,14 @@ margin-top: 33px;
 width: 1130px;
 height: 400px;
 border-radius: 5px;
-background-color: white;
+background-color: var(--fourth-color);
 margin-left: 85px;
 }
 .deals h1{
 margin-left: 22px;
 margin-top: 33px;
 padding: 22px;
+color: var(--fifth-color);
 }
 .deals .img{
 display: flex;
@@ -129,7 +163,7 @@ width: 12%;
 .top{
 display: flex;
 justify-content: center;
-background-color: rgb(43, 43, 71);
+background-color: var(--secondary-color);
 color: white;
 padding: 10px;
 margin-top: 26px;
@@ -143,6 +177,17 @@ display: flex;
 justify-content: center;
 justify-content: space-around;
 color: white;
-background-color: rgb(19, 19, 49);
+background-color: var(--sixth-color);
 padding: 44px;
 }
+#icon{
+width: 28px;
+cursor: pointer;
+}
+h4{
+margin-top: 4px;
+}
+
+
+
+
